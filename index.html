@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="mobile-app-r7.svg" type="image/x-icon">
+  <title>R7 Casino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🎰 фон музыка -->
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="wrapper">
+
+    <div class="card">
+
+      <h1> <img src="mobile-app-r7.svg" alt="#"> <span class="r7">R7</span> Casino</h1>
+
+<!-- <p>
+  Здравствуйте 🙂
+</p>
+
+<p>
+  <strong>Рад сообщить вам о новой дополнительной опции специально для вас - бонус страховка, который может быть подключён к вашему аккаунту. <br>
+Как это работает:</strong>
+</p>
+
+<p>
+ 1. После подключения за вами закрепляется страховка. <br>
+2. Срок действия - 5 дней с момента активации. <br>
+3. В течение этого периода учитывается сумма ваших депозитов. <br>
+4. При достижении установленного порога вам начисляются  бесплатные вращения (FS) автоматически. <br>
+5. Отыгрыш возможен как с реального, так и с бонусного баланса. 
+</p> -->
+
+<p>Здравствуйте 🙂</p>
+
+<p>
+  <strong>
+    Рад сообщить вам о новой дополнительной опции - бонусе «Cтраховка», который может быть подключён к вашему аккаунту.
+  </strong>
+</p>
+
+<p><strong>Как это работает:</strong></p>
+
+<ol>
+  <li>После подключения за вами закрепляется страховка.</li>
+  <li>Срок действия - 5 дней с момента активации.</li>
+  <li>В течение этого периода учитывается сумма ваших депозитов.</li>
+  <li>При достижении установленного порога вам начисляются бесплатные вращения (FS) автоматически.</li>
+  <li>Отыгрыш возможен как с реального, так и с бонусного баланса.</li>
+</ol>
+
+
+
+<p class="note">
+  ⚠️ <strong>Важно:</strong> Для активации страховки обратитесь к вашему личному менеджеру 
+</p>
+      <!-- кнопки -->
+      <div class="buttons">
+
+        <a class="btn" href="http://nexofyn.com/?123">Перейти на сайт</a>
+
+        <button class="music-btn" id="musicBtn">🎵</button>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+    const music = document.getElementById("bgMusic");
+    const btn = document.getElementById("musicBtn");
+
+    let playing = false;
+
+    btn.addEventListener("click", async () => {
+      try {
+        if (!playing) {
+          await music.play();
+          playing = true;
+          btn.classList.add("active");
+        } else {
+          music.pause();
+          playing = false;
+          btn.classList.remove("active");
+        }
+      } catch (e) {
+        console.log("Audio error:", e);
+      }
+    });
+  </script>
+
+</body>
+</html>
