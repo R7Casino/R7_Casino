@@ -185,11 +185,11 @@ ol {
     align-items: flex-start;
   }
 
-  .btn {
+  /* .btn {
     padding: 10px 20px;
     font-size: 15px;
     border-radius: 12px;
-  }
+  } */
 
   .card {
     margin-top: 20px;
